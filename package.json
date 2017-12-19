@@ -1,0 +1,32 @@
+{
+  "name": "vue-typescript-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "debug": "./node_modules/.bin/webpack-dev-server --hot --inline --config webpack/webpack.config.debug.js"
+  },
+  "repository": "https://github.com/chengxintuan/vue-typescript-project.git",
+  "author": "xintchen <chengxt_dcits@163.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.7",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.6.0",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "vue": "^2.5.11",
+    "vue-class-component": "^6.1.2",
+    "vue-loader": "^13.6.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.11",
+    "vuex": "^3.0.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
