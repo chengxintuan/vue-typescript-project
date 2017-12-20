@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const rootPath = path.join(__dirname, '../');
 const srcPath = path.join(rootPath, 'src');
-const entryPath = path.join(srcPath, 'page/main.js');
+const entryPath = path.join(srcPath, 'page/main.ts');
 
 const outPath = path.join(rootPath, 'dist');
 
@@ -41,7 +41,7 @@ const config = {
             }, {
                 test: /\.less$/,
                 use: ['style-loader', 'css-loader', 'less-loader'],
-                exclude: /(node_modules)/,
+                exclude: /node_modules/,
                 include: srcPath
             }, {
                 test: /\.(png|jpg|gif|svg)$/,

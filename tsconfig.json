@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "noImplicitAny": false,
     "sourceMap": true,
     "strict": true,
     "module": "es2015",
@@ -15,6 +16,9 @@
   },
   "include": [
     "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "files": [
     "typings/index.d.ts"
