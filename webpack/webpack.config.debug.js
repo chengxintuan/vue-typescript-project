@@ -23,6 +23,9 @@ const config = {
         contentBase: './dist'
     },
     resolve: {
+        alias: {
+            'api': path.join(srcPath, 'service/api/index')
+        },
         extensions: ['.js', '.ts', '.css', '.less', '.png', '.svg', '.vue']
     },
     externals: {
@@ -31,13 +34,17 @@ const config = {
     module: {
         rules: [
             {
-                test: /\.vue$/,
-                loader: 'vue-loader'
-            },
-            {
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-                loader: 'ts-loader'
+                use: [{
+                    loader: 'ts-loader',
+                    options: {
+                        appendTsSuffixTo: [/\.vue$/]
+                    }
+                }]
+            }, {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }, {
                 test: /\.less$/,
                 use: ['style-loader', 'css-loader', 'less-loader'],

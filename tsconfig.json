@@ -8,6 +8,13 @@
     "moduleResolution": "node",
     "target": "es5",
     "experimentalDecorators": true,
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "api": [
+        "src/service/api/index"
+      ]
+    },
     "lib": [
       "es5",
       "es2015.promise",
@@ -15,7 +22,11 @@
     ]
   },
   "include": [
-    "./src/**/*"
+    "src",
+    "node_modules/@types"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "exclude": [
     "node_modules"
