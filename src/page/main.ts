@@ -1,6 +1,13 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
-import VueRouter from 'vue-router';
+import Score from './score/index.vue';
 
-import routes from '../router/routes';
-import store from './store';
+new Vue({
+    el: '#app',
+    template: '<score :message="message"></score>',
+    data: {
+        message: 'hello world!'
+    },
+    components:{
+        Score
+    }
+})
