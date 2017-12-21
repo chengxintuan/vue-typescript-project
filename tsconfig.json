@@ -13,6 +13,9 @@
     "paths": {
       "api": [
         "src/service/api/index"
+      ],
+      "model": [
+        "src/service/model/index"
       ]
     },
     "lib": [

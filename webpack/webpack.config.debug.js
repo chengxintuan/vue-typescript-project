@@ -24,7 +24,8 @@ const config = {
     },
     resolve: {
         alias: {
-            'api': path.join(srcPath, 'service/api/index')
+            'api': path.join(srcPath, 'service/api/index'),
+            'model': path.join(srcPath, 'service/model/index')
         },
         extensions: ['.js', '.ts', '.css', '.less', '.png', '.svg', '.vue']
     },

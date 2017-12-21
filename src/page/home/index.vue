@@ -1,17 +1,14 @@
-<!--<template>-->
-    <!--<div class="home_container">-->
-        <!--<itemcontainer father-component="home"></itemcontainer>-->
-    <!--</div>-->
-<!--</template>-->
+<template>
+    <div class="home_container">
 
-<!--<script lang="ts">-->
-    <!--import {Component, Vue, Prop} from 'vue-property-decorator';-->
-    <!--import itemcontainer from '../../components/itemcontainer'-->
+    </div>
+</template>
 
-    <!--@Component-->
-    <!--export default class Home extends Vue {-->
+<script lang="ts">
+    import {mapState, mapActions, mapGetters} from 'vuex';
+    import Vue from 'vue';
 
-    <!--}-->
+    export default {
 
-
-<!--</script>-->
+    }
+</script>
