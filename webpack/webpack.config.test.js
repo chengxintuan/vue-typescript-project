@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer');
 
 const rootPath = path.join(__dirname, '../');
 const srcPath = path.join(rootPath, 'src');
@@ -18,11 +18,6 @@ const config = {
         publicPath: ''
     },
     devtool: "inline-source-map",
-    devServer: {
-        host: 'localhost',
-        port: 8000,
-        contentBase: './dist'
-    },
     resolve: {
         alias: {
             'api': path.join(srcPath, 'service/api/index'),
@@ -82,7 +77,7 @@ const config = {
             template: 'index.hbs',
             filename: 'app.html'
         }),
-       // new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
+        new BundleAnalyzerPlugin.BundleAnalyzerPlugin(),
     ]
 }
 

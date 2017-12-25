@@ -4,8 +4,13 @@ import {HomeApi} from 'api';
 const api = new HomeApi();
 
 export default {
+    namespaced: true,
     state: {
-        homeList: []
+        homeList: [{
+            name: '张三',
+            age: 23,
+            sex: true
+        }]
     },
     mutations: {
         updataState(state, payload) {

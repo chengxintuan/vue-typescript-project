@@ -1,0 +1,135 @@
+.todoapp {
+  .header {
+    h1 {
+      margin-top: 10px;
+      width: 100%;
+      font-size: 100px;
+      font-weight: 100;
+      text-align: left;
+      color: rgba(175, 47, 47, 0.15);
+      -webkit-text-rendering: optimizeLegibility;
+      -moz-text-rendering: optimizeLegibility;
+      text-rendering: optimizeLegibility;
+    }
+    .addBar {
+      .arrow {
+        display: inline-block;
+        position: relative;
+        border: 1px solid #dddddd;
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        vertical-align: middle;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .checkArrow {
+        background-color: orange;
+      }
+      .checkArrow:after {
+        content: '\00a0';
+        display: inline-block;
+        border: 2px solid #fff;
+        border-top-width: 0;
+        border-right-width: 0;
+        width: 12px;
+        height: 6px;
+        -webkit-transform: rotate(-50deg);
+        position: absolute;
+        top: 6px;
+        left: 4px;
+      }
+    }
+    .todoList {
+      padding-left: 20px !important;
+      .todoItem {
+        padding-left: 15px;
+        list-style: none;
+        height: 40px;
+        line-height: 40px;
+        width: 30%;
+        border-bottom: 1px solid #dddddd;
+        padding: 3px 0px;
+        cursor: pointer;
+        span {
+          display: inline-block;
+          cursor: pointer;
+        }
+        .checkBox {
+          position: relative;
+          border: 1px solid #dddddd;
+          width: 22px;
+          height: 22px;
+          line-height: 22px;
+          vertical-align: middle;
+          text-align: center;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .checked {
+          background-color: orange;
+        }
+        .checked:after {
+          content: '\00a0';
+          display: inline-block;
+          border: 2px solid #fff;
+          border-top-width: 0;
+          border-right-width: 0;
+          width: 12px;
+          height: 6px;
+          -webkit-transform: rotate(-50deg);
+          position: absolute;
+          top: 6px;
+          left: 4px;
+        }
+        .content {
+          padding-left: 5px;
+        }
+        .red {
+          color: #dddddd;
+          text-decoration: line-through;
+        }
+        .close {
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          margin-left: 50px;
+          line-height: 18px;
+          color: orangered;
+          display: none;
+          float: right;
+          margin-top: 9px;
+          margin-right: 20px;
+          font-size: 18px;
+        }
+      }
+      .todoItem:hover {
+        .close {
+          display: inline-block;
+        }
+      }
+
+    }
+  }
+
+  .footer {
+    display: inline-block;
+    & .footerItem:nth-child(1) {
+      cursor: default !important;
+    }
+
+    & .footerItem {
+      display: inline-block;
+      margin-right: 30px;
+      cursor: pointer;
+    }
+
+    & .active {
+      padding: 1px 15px;
+      border: 1px solid orangered;
+      border-radius: 5px;
+    }
+  }
+}

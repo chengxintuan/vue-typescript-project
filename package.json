@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "debug": "./node_modules/.bin/webpack-dev-server --hot --inline --config webpack/webpack.config.debug.js"
+    "debug": "./node_modules/.bin/webpack-dev-server --hot --inline --config webpack/webpack.config.debug.js",
+    "build": "webpack --config webpack/webpack.config.test.js"
   },
   "repository": "https://github.com/chengxintuan/vue-typescript-project.git",
   "author": "xintchen <chengxt_dcits@163.com>",
@@ -30,6 +31,7 @@
     "vuex": "^3.0.1",
     "vuex-class": "^0.3.0",
     "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.1",
     "webpack-dev-server": "^2.9.7"
   }
 }

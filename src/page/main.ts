@@ -1,13 +1,23 @@
 import Vue from 'vue';
 import Score from './score/index.vue';
+import Home from './home/index.vue';
+import Todo from './todo/index.vue';
+import store from './store';
 
 new Vue({
     el: '#app',
-    template: '<score :message="message"></score>',
+    store,
+    template: `
+        <div>
+            <todo></todo>
+        </div>
+    `,
     data: {
         message: 'hello world!'
     },
-    components:{
-        Score
+    components: {
+        Score,
+        Home,
+        Todo
     }
-})
+});

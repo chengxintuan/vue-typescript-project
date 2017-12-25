@@ -1,10 +1,18 @@
+import Vue from 'vue';
 import Vuex from 'vuex';
 import Home from './home/Homestore';
+import Todo from './todo/TodoStore';
+
+Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        name: 'zhangsan',
+        firstName: 'zhang',
+        lastName: 'san',
         password: '123456'
     },
-    modules: {Home}
+    modules: {
+        home: Home,
+        todo: Todo
+    }
 })

@@ -1,40 +1,41 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "sourceMap": true,
-    "strict": true,
-    "module": "es2015",
-    "moduleResolution": "node",
-    "target": "es5",
-    "experimentalDecorators": true,
-    "allowJs": true,
-    "baseUrl": ".",
-    "paths": {
-      "api": [
-        "src/service/api/index"
-      ],
-      "model": [
-        "src/service/model/index"
-      ]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "strict": true,
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "paths": {
+            "api": [
+                "src/service/api/index"
+            ],
+            "model": [
+                "src/service/model/index"
+            ]
+        },
+        "lib": [
+            "es2015",
+            "es5",
+            "es2015.promise",
+            "dom"
+        ]
     },
-    "lib": [
-      "es5",
-      "es2015.promise",
-      "dom"
+    "include": [
+        "src",
+        "node_modules/@types"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "typings/index.d.ts"
     ]
-  },
-  "include": [
-    "src",
-    "node_modules/@types"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
-  "files": [
-    "typings/index.d.ts"
-  ]
 }
